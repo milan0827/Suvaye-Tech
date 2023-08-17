@@ -1,7 +1,3 @@
-html {
-  /* font-size: 62.5%; */
-}
-
 body {
   line-height: 1.5rem;
 }
@@ -66,10 +62,6 @@ ul li {
 }
 
 @media only screen and (max-width: 75rem) {
-  html {
-    /* font-size: 62.5%; */
-  }
-
   body {
     margin: 4rem 10rem !important;
   }
@@ -80,10 +72,6 @@ ul li {
 }
 
 @media only screen and (max-width: 52rem) {
-  html {
-    /* font-size: 50%; */
-  }
-
   body {
     margin: 4rem 5rem !important;
   }
