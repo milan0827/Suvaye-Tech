@@ -1,0 +1,75 @@
+body {
+  line-height: 1.5rem;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.logo h1 {
+  display: inline;
+}
+
+.search {
+  position: relative;
+}
+
+.search__glass {
+  position: absolute;
+  top: 0.6rem;
+  left: 1rem;
+}
+
+#search:hover,
+#search:active {
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.229);
+}
+
+#search:focus {
+  outline: none;
+  border: none;
+}
+
+.icon {
+  align-items: center;
+}
+
+ul {
+  list-style-type: decimal;
+}
+
+.speech {
+  background-color: rgb(206, 206, 206);
+  color: white;
+  cursor: pointer;
+}
+
+.speech:hover,
+.speech:active {
+  background-color: rgba(0, 0, 0, 0.894);
+  color: white;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.894);
+}
+
+@media screen and (max-width: 90rem) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 70rem) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* I could not make the responsive website because of the time. */
