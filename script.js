@@ -4,6 +4,7 @@ const output = document.getElementById("output");
 const audio = document.getElementById("audio");
 const result = document.getElementById("result");
 
+//API
 const url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
 form.addEventListener("submit", (e) => {
@@ -28,18 +29,19 @@ form.addEventListener("submit", (e) => {
       <p class="output-word-origin inline">${data[0].phonetic}</p>
     </div>
     <div class="flex items-center gap-4 ml-8 mt-4">
-      <p class="text-white py-1 px-2 rounded-md speech active">${data[0].meanings[0].partOfSpeech}</p>
-      <p class="text-white py-1 px-2 rounded-md speech">${data[0].meanings[1].partOfSpeech}</p>
+      ${data[0].meanings
+        .map(
+          (el) =>
+            `<p class="text-white py-1 px-2 rounded-md speech">${el.partOfSpeech}</p>`
+        )
+        .join(" ")}
     </div>
 
     <div class="output__desc ml-8 mt-4">
       <ul class="output__desc--list">
-        <li class="output__desc--list-item mb-2">
-          ${data[0].meanings[0].definitions[0].definition}
-        </li>
-        <li class="output__desc--list-item mb-2">
-          ${data[0].meanings[0].definitions[1].definition}
-        </li>
+        ${data[0].meanings[0].definitions
+          .map((el) => `<li>${el.definition}</li>`)
+          .join(" ")}
       </ul>
     </div>
   </div>

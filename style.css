@@ -1,15 +1,20 @@
+html {
+  /* font-size: 62.5%; */
+}
+
 body {
   line-height: 1.5rem;
 }
 
 .logo {
   width: 100%;
-  display: flex;
+  display: inline-flex;
   gap: 1rem;
+  cursor: pointer;
 }
 
-.logo h1 {
-  display: inline;
+.logo__name {
+  display: inline-block;
 }
 
 .search {
@@ -36,7 +41,7 @@ body {
   align-items: center;
 }
 
-ul {
+ul li {
   list-style-type: decimal;
 }
 
@@ -52,13 +57,21 @@ ul {
   color: white;
 }
 
+#output {
+  overflow: scroll;
+}
+
 .active {
   background-color: rgba(0, 0, 0, 0.894);
 }
 
-@media screen and (max-width: 90rem) {
+@media only screen and (max-width: 75rem) {
   html {
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
+  }
+
+  body {
+    margin: 4rem 10rem !important;
   }
 
   .form {
@@ -66,10 +79,37 @@ ul {
   }
 }
 
-@media screen and (max-width: 70rem) {
+@media only screen and (max-width: 52rem) {
   html {
-    font-size: 50%;
+    /* font-size: 50%; */
+  }
+
+  body {
+    margin: 4rem 5rem !important;
   }
 }
 
-/* I could not make the responsive website because of the time. */
+@media only screen and (max-width: 38rem) {
+  html {
+    font-size: 43.75%;
+  }
+
+  body {
+    margin: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  body {
+    margin: 0 !important;
+  }
+
+  #search {
+    width: 100%;
+  }
+
+  #output {
+    overflow: scroll;
+    width: 100%;
+  }
+}
