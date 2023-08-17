@@ -17,7 +17,7 @@ form.addEventListener("submit", (e) => {
 
       result.innerHTML = `
   <div
-    class="output border-gray-200 border-solid border-2 h-96 rounded-xl bg-slate-50	"
+    class="output border-gray-200 border-solid border-2 h-96 rounded-xl bg-slate-50"
     id="output"
   >
     <div class="output__word ml-6 mt-4">
