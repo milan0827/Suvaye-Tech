@@ -73,7 +73,7 @@ ul li {
 
 @media only screen and (max-width: 52rem) {
   body {
-    margin: 4rem 5rem !important;
+    margin: 4rem 8rem !important;
   }
 
   #output {
@@ -87,17 +87,17 @@ ul li {
   }
 
   body {
-    margin: 2rem !important;
+    margin: 6rem !important;
   }
 }
 
 @media only screen and (max-width: 30rem) {
   body {
-    margin: 0 !important;
+    margin: 4rem !important;
   }
 
   #search {
-    width: 100%;
+    width: 80%;
   }
 
   #output {
